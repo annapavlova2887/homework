@@ -1,1 +1,511 @@
-test
+Last login: Fri Jul 19 19:47:53 on ttys000
+annapavlova@mb ~ % git --version
+git version 2.32.1 (Apple Git-133)
+annapavlova@mb ~ % git config --list --show-origin
+file:/Library/Developer/CommandLineTools/usr/share/git-core/gitconfig   credential.helper=osxkeychain
+annapavlova@mb ~ % git config --global user.name "Anna Pavlova" 
+annapavlova@mb ~ % git config --global user.email annapavlova2887@gmail.com
+annapavlova@mb ~ % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/annapavlova/.git/
+annapavlova@mb ~ % git config --global init.defaultBranch <lolkek>
+zsh: parse error near `\n'
+annapavlova@mb ~ % git config --global init.defaultBranch lolkek
+annapavlova@mb ~ % cd Desktop
+annapavlova@mb Desktop % git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+annapavlova@mb Desktop % git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+annapavlova@mb Desktop % cd
+annapavlova@mb ~ % Desktop
+zsh: command not found: Desktop
+annapavlova@mb ~ % cd
+annapavlova@mb ~ % cd Desctop
+cd: no such file or directory: Desctop
+annapavlova@mb ~ % ls
+Desktop		Downloads	Movies		Pictures	Public
+Documents	Library		Music		Postman
+annapavlova@mb ~ % cd Desktop
+annapavlova@mb Desktop % cd git
+annapavlova@mb git % git init
+Initialized empty Git repository in /Users/annapavlova/Desktop/git/.git/
+annapavlova@mb git % ls
+annapavlova@mb git % ls -la
+total 0
+drwxr-xr-x@  3 annapavlova  staff   96 Jul 19 20:30 .
+drwx------@ 20 annapavlova  staff  640 Jul 19 20:30 ..
+drwxr-xr-x@ 10 annapavlova  staff  320 Jul 19 20:30 .git
+annapavlova@mb git % git status
+On branch lolkek
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+
+nothing added to commit but untracked files present (use "git add" to track)
+annapavlova@mb git % git status
+On branch lolkek
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	test
+
+nothing added to commit but untracked files present (use "git add" to track)
+annapavlova@mb git % git add .
+annapavlova@mb git % git status
+On branch lolkek
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .DS_Store
+	new file:   test
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+
+annapavlova@mb git % touch 123.txt
+annapavlova@mb git % git status   
+On branch lolkek
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .DS_Store
+	new file:   test
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	123.txt
+
+annapavlova@mb git % git add .    
+annapavlova@mb git % git status
+On branch lolkek
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .DS_Store
+	new file:   123.txt
+	new file:   test
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+
+annapavlova@mb git % git restore --staged 123.txt
+fatal: could not resolve HEAD
+annapavlova@mb git % git comit -n"add 123.txt"
+git: 'comit' is not a git command. See 'git --help'.
+
+The most similar command is
+	commit
+annapavlova@mb git % git commit -n"add 123.txt"
+error: unknown switch `d'
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup [(amend|reword):]commit
+                          use autosquash formatted message to fixup or amend/reword specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    --trailer <trailer>   add custom trailer(s)
+    -s, --signoff         add a Signed-off-by trailer
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+annapavlova@mb git % git commit -n add 123.txt
+error: pathspec 'add' did not match any file(s) known to git
+annapavlova@mb git % git commit -m add 123.txt
+[lolkek (root-commit) dab9fb0] add
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 123.txt
+annapavlova@mb git % git status                  
+On branch lolkek
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .DS_Store
+	new file:   test
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+
+annapavlova@mb git % git status                  
+On branch lolkek
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .DS_Store
+	new file:   test
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+	modified:   123.txt
+
+annapavlova@mb git % git add .                   
+annapavlova@mb git % git status
+On branch lolkek
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .DS_Store
+	modified:   123.txt
+	new file:   test
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+
+annapavlova@mb git % git commit -m "123.txt" 
+[lolkek 564b09b] 123.txt
+ 3 files changed, 2 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 test
+annapavlova@mb git % git restore 123.txt
+annapavlova@mb git % git status
+On branch lolkek
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+
+no changes added to commit (use "git add" and/or "git commit -a")
+annapavlova@mb git % git status
+On branch lolkek
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+	modified:   123.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+annapavlova@mb git % git restore
+fatal: you must specify path(s) to restore
+annapavlova@mb git % git restore 123.txt
+annapavlova@mb git % git commit -m ".gitignore"
+On branch lolkek
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+annapavlova@mb git % git status                
+On branch lolkek
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+annapavlova@mb git % git status                
+On branch lolkek
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+annapavlova@mb git % git commit -m ".gitignore"
+On branch lolkek
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+annapavlova@mb git % git status                
+On branch lolkek
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+annapavlova@mb git % git restore 123.txt       
+annapavlova@mb git % git status                
+On branch lolkek
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+annapavlova@mb git % git status                   
+On branch lolkek
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+annapavlova@mb git % git add.                  
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+	add
+annapavlova@mb git % git add .
+annapavlova@mb git % git commit -m ".gitignore"
+[lolkek c897680] .gitignore
+ 2 files changed, 2 insertions(+)
+ create mode 100644 .gitignore
+annapavlova@mb git % git status                
+On branch lolkek
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+
+no changes added to commit (use "git add" and/or "git commit -a")
+annapavlova@mb git % touch 1.log
+annapavlova@mb git % git status                
+On branch lolkek
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+
+no changes added to commit (use "git add" and/or "git commit -a")
+annapavlova@mb git % git rm --cached .DS_Store 
+rm '.DS_Store'
+annapavlova@mb git % git status               
+On branch lolkek
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	deleted:    .DS_Store
+
+annapavlova@mb git % git commit -m ".DS_Store" 
+[lolkek 7966937] .DS_Store
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 .DS_Store
+annapavlova@mb git % git status               
+On branch lolkek
+nothing to commit, working tree clean
+annapavlova@mb git % git checkout -b "minilol"
+Switched to a new branch 'minilol'
+annapavlova@mb git % git touch 345.txt
+git: 'touch' is not a git command. See 'git --help'.
+annapavlova@mb git % touch 345.txt        
+annapavlova@mb git % git checkout "lolkek"
+Switched to branch 'lolkek'
+annapavlova@mb git % git checkout "minilol"
+Switched to branch 'minilol'
+annapavlova@mb git % git add .
+annapavlova@mb git % git commit -m "345.txt"  
+[minilol fa1e3af] 345.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 345.txt
+annapavlova@mb git % git checkout "lolkek"  
+Switched to branch 'lolkek'
+annapavlova@mb git % git branch
+* lolkek
+  minilol
+annapavlova@mb git % git status
+On branch lolkek
+nothing to commit, working tree clean
+annapavlova@mb git % git merge minilol
+Updating 7966937..fa1e3af
+Fast-forward
+ 345.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 345.txt
+annapavlova@mb git % git branga -d minilol
+git: 'branga' is not a git command. See 'git --help'.
+
+The most similar command is
+	branch
+annapavlova@mb git % git branche -d minilol
+git: 'branche' is not a git command. See 'git --help'.
+
+The most similar command is
+	branch
+annapavlova@mb git % git branch -d minilol 
+Deleted branch minilol (was fa1e3af).
+annapavlova@mb git % git branch
+* lolkek
+annapavlova@mb git % 
